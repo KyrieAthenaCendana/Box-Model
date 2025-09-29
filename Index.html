@@ -1,72 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3 Boxes Layout</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+<title>Box Model</title>
+<style>
+div {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  margin: 0;
+}
 
-    .container {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-      grid-gap: 0; 
-    }
-
-    .box {
-      width: 200px;
-      height: 200px;
-      box-sizing: border-box; 
-    }
+.first {
+  background-color: cadetblue;
+  width: 200px ;
+  height: 200px ;
+  padding: 20px;
+  border: 10px solid black;
+  vertical-align: top;
+}
 
 
-    .box1 {
-      background-color: cadetblue;
-      padding: 20px;
-      border: 10px solid black;
-    }
-    .box1 p {
-      margin: 0; 
-    }
+.second {
+  background-color: gold;
+  border-top: 20px solid black;
+  border-bottom: 20px solid black;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  margin-left: 260px;
+  position: relative;
+}
 
-  
-    .box2 {
-      background-color: gold;
-      border-top: 20px solid black;
-      border-bottom: 20px solid black;
-      border-left: 10px solid black;
-      border-right: 10px solid black;
-    }
-
-  
-    .box3 {
-      background-color: indianred;
-      border: 10px solid black;
-      grid-column: 1 / span 2; 
-      justify-self: center; 
-    }
-  </style>
+.third {
+  background-color: indianred;
+  border: 10px solid black;
+  margin-left: 40px; 
+  position: relative;
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="box box1">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aliquam at sapien porttitor urna elementum lacinia.
-        In id magna pulvinar, ultricies lorem id, vehicula elit.
-        Aliquam eu luctus nisl, vitae pellentesque magna.
-        Phasellus dolor metus, laoreet ac convallis sit amet,
-        efficitur sed dolor.
-      </p>
-    </div>
 
-    <div class="box box2"></div>
-    <div class="box box3"></div>
-  </div>
+<div class="first">
+  <p>To my dearest Joshua, thankyouu for everything you've done. Always remember that you have me through your ups and downs, I'm always here to comfort you and guide you in everything. I'm also thankful because I met you, you became my motivation in everything. Take care as always, Iloveyouu.</p>
+</div>
+<div class="second"></div>
+<div class="third"></div>
+
 </body>
 </html>
